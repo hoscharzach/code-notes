@@ -20,8 +20,6 @@ function App() {
     startService()
   }, [])
 
-
-
   const onClick = async () => {
     if (!serviceRef) {
       return
@@ -33,9 +31,12 @@ function App() {
       write: false,
       plugins: [unpkgPathPlugin()]
     })
-
     setCode(result.code)
   }
+
+  console.log(code, "CODE STATE VARIABLE")
+
+
 
   return (
     <>

@@ -31,10 +31,10 @@ function App() {
       write: false,
       plugins: [unpkgPathPlugin()]
     })
-    setCode(result.code)
+    setCode(result.outputFiles[0].text)
   }
 
-  console.log(code, "CODE STATE VARIABLE")
+  // console.log(code, "CODE STATE VARIABLE")
 
 
 
